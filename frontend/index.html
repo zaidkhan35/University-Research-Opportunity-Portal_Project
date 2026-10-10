@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Opportunity Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>University Research Opportunity Portal</h1>
+    <p>Post, view, update and manage research opportunities in one place.</p>
+  </header>
+
+  <main>
+
+    <!-- Success and error messages appear here -->
+    <div id="message" class="message hidden"></div>
+
+    <!-- 1. List of all opportunities -->
+    <section class="card">
+      <h2>All Research Opportunities</h2>
+
+      <div class="toolbar">
+        <input type="number" id="lookup-id" placeholder="Enter opportunity ID" min="1">
+        <button type="button" id="lookup-btn" class="btn">View by ID</button>
+        <button type="button" id="refresh-btn" class="btn">Refresh list</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Faculty</th>
+              <th>Department</th>
+              <th>Positions</th>
+              <th>Deadline</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="list"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 2. Details of one opportunity -->
+    <section class="card hidden" id="details-section">
+      <h2>Opportunity Details</h2>
+      <div id="details"></div>
+      <button type="button" id="hide-details-btn" class="btn">Hide details</button>
+    </section>
+
+    <!-- 3. Create / update form -->
+    <section class="card">
+      <h2 id="form-title">Add New Opportunity</h2>
+
+      <form id="opportunity-form" novalidate>
+
+        <label for="f_title">Research title *</label>
+        <input type="text" id="f_title" maxlength="200">
+
+        <label for="f_description">Research description *</label>
+        <textarea id="f_description" rows="4"></textarea>
+
+        <div class="row">
+          <div>
+            <label for="f_research_area">Research area *</label>
+            <input type="text" id="f_research_area" maxlength="100">
+          </div>
+          <div>
+            <label for="f_faculty_name">Faculty member's name *</label>
+            <input type="text" id="f_faculty_name" maxlength="100">
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="f_department">Department *</label>
+            <input type="text" id="f_department" maxlength="100">
+          </div>
+          <div>
+            <label for="f_required_skills">Required skills * (comma separated)</label>
+            <input type="text" id="f_required_skills" maxlength="300">
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="f_available_positions">Available positions *</label>
+            <input type="number" id="f_available_positions" min="1" max="100">
+          </div>
+          <div>
+            <label for="f_application_deadline">Application deadline *</label>
+            <input type="date" id="f_application_deadline">
+          </div>
+          <div>
+            <label for="f_status">Status</label>
+            <select id="f_status">
+              <option value="Open" selected>Open</option>
+              <option value="Closed">Closed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="submit-btn" class="btn primary">Create Opportunity</button>
+          <button type="button" id="cancel-btn" class="btn hidden">Cancel editing</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
