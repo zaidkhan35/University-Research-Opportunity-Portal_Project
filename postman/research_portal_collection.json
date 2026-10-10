@@ -1,0 +1,786 @@
+{
+  "info": {
+    "_postman_id": "903c956c-95a0-4f7d-9d52-743f974c91a5",
+    "name": "Research Portal",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58860824",
+    "_collection_link": "https://go.postman.co/collection/58860824-903c956c-95a0-4f7d-9d52-743f974c91a5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create opportunity 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create opportunity 1",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:03:19 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "333"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"AI for Crop Disease Detection\",\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\n  \"research_area\": \"Machine Learning\",\n  \"faculty_name\": \"Dr. Ayesha Khan\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"Python, TensorFlow\",\n  \"available_positions\": 3,\n  \"application_deadline\": \"2026-12-31\",\n  \"status\": \"Open\",\n  \"id\": 3\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create opportunity 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Smart Campus IoT Monitoring\",\r\n  \"description\": \"Design sensors that track classroom energy usage.\",\r\n  \"research_area\": \"Internet of Things\",\r\n  \"faculty_name\": \"Dr. Bilal Ahmed\",\r\n  \"department\": \"Electrical Engineering\",\r\n  \"required_skills\": \"Arduino, C++, MQTT\",\r\n  \"available_positions\": 2,\r\n  \"application_deadline\": \"2026-11-30\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create opportunity 2",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Smart Campus IoT Monitoring\",\r\n  \"description\": \"Design sensors that track classroom energy usage.\",\r\n  \"research_area\": \"Internet of Things\",\r\n  \"faculty_name\": \"Dr. Bilal Ahmed\",\r\n  \"department\": \"Electrical Engineering\",\r\n  \"required_skills\": \"Arduino, C++, MQTT\",\r\n  \"available_positions\": 2,\r\n  \"application_deadline\": \"2026-11-30\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:11:48 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "335"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"Smart Campus IoT Monitoring\",\n  \"description\": \"Design sensors that track classroom energy usage.\",\n  \"research_area\": \"Internet of Things\",\n  \"faculty_name\": \"Dr. Bilal Ahmed\",\n  \"department\": \"Electrical Engineering\",\n  \"required_skills\": \"Arduino, C++, MQTT\",\n  \"available_positions\": 2,\n  \"application_deadline\": \"2026-11-30\",\n  \"status\": \"Open\",\n  \"id\": 4\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create opportunity 3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Urdu Sentiment Analysis Dataset\",\r\n  \"description\": \"Collect and label Urdu social media text for sentiment research.\",\r\n  \"research_area\": \"Natural Language Processing\",\r\n  \"faculty_name\": \"Dr. Sana Malik\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, NLP, Pandas\",\r\n  \"available_positions\": 4,\r\n  \"application_deadline\": \"2027-01-15\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create opportunity 3",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Urdu Sentiment Analysis Dataset\",\r\n  \"description\": \"Collect and label Urdu social media text for sentiment research.\",\r\n  \"research_area\": \"Natural Language Processing\",\r\n  \"faculty_name\": \"Dr. Sana Malik\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, NLP, Pandas\",\r\n  \"available_positions\": 4,\r\n  \"application_deadline\": \"2027-01-15\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:12:48 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "357"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"Urdu Sentiment Analysis Dataset\",\n  \"description\": \"Collect and label Urdu social media text for sentiment research.\",\n  \"research_area\": \"Natural Language Processing\",\n  \"faculty_name\": \"Dr. Sana Malik\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"Python, NLP, Pandas\",\n  \"available_positions\": 4,\n  \"application_deadline\": \"2027-01-15\",\n  \"status\": \"Open\",\n  \"id\": 5\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Get all",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:13:43 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "1289"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"title\": \"Computer networks\",\n    \"description\": \"sdjqwkbdhwqsbdhjwqbsdhqjw\",\n    \"research_area\": \"http methods\",\n    \"faculty_name\": \"sir khizar\",\n    \"department\": \"cs\",\n    \"required_skills\": \"python\",\n    \"available_positions\": 34,\n    \"application_deadline\": \"2000-02-03\",\n    \"status\": \"Open\",\n    \"id\": 2\n  },\n  {\n    \"title\": \"AI for Crop Disease Detection\",\n    \"description\": \"Build a model that detects leaf diseases from photos.\",\n    \"research_area\": \"Machine Learning\",\n    \"faculty_name\": \"Dr. Ayesha Khan\",\n    \"department\": \"Computer Science\",\n    \"required_skills\": \"Python, TensorFlow\",\n    \"available_positions\": 3,\n    \"application_deadline\": \"2026-12-31\",\n    \"status\": \"Open\",\n    \"id\": 3\n  },\n  {\n    \"title\": \"Smart Campus IoT Monitoring\",\n    \"description\": \"Design sensors that track classroom energy usage.\",\n    \"research_area\": \"Internet of Things\",\n    \"faculty_name\": \"Dr. Bilal Ahmed\",\n    \"department\": \"Electrical Engineering\",\n    \"required_skills\": \"Arduino, C++, MQTT\",\n    \"available_positions\": 2,\n    \"application_deadline\": \"2026-11-30\",\n    \"status\": \"Open\",\n    \"id\": 4\n  },\n  {\n    \"title\": \"Urdu Sentiment Analysis Dataset\",\n    \"description\": \"Collect and label Urdu social media text for sentiment research.\",\n    \"research_area\": \"Natural Language Processing\",\n    \"faculty_name\": \"Dr. Sana Malik\",\n    \"department\": \"Computer Science\",\n    \"required_skills\": \"Python, NLP, Pandas\",\n    \"available_positions\": 4,\n    \"application_deadline\": \"2027-01-15\",\n    \"status\": \"Open\",\n    \"id\": 5\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get one",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Get one",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:16:53 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "333"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"AI for Crop Disease Detection\",\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\n  \"research_area\": \"Machine Learning\",\n  \"faculty_name\": \"Dr. Ayesha Khan\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"Python, TensorFlow\",\n  \"available_positions\": 3,\n  \"application_deadline\": \"2026-12-31\",\n  \"status\": \"Open\",\n  \"id\": 3\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection (Updated)\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow, OpenCV\",\r\n  \"available_positions\": 5,\r\n  \"application_deadline\": \"2027-02-28\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Update",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection (Updated)\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow, OpenCV\",\r\n  \"available_positions\": 5,\r\n  \"application_deadline\": \"2027-02-28\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:18:23 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "351"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"AI for Crop Disease Detection (Updated)\",\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\n  \"research_area\": \"Machine Learning\",\n  \"faculty_name\": \"Dr. Ayesha Khan\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"Python, TensorFlow, OpenCV\",\n  \"available_positions\": 5,\n  \"application_deadline\": \"2027-02-28\",\n  \"status\": \"Open\",\n  \"id\": 3\n}"
+        }
+      ]
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:19:21 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "44"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Research opportunity 3 deleted\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "404",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "404",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"AI for Crop Disease Detection\",\r\n  \"description\": \"Build a model that detects leaf diseases from photos.\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"department\": \"Computer Science\",\r\n  \"required_skills\": \"Python, TensorFlow\",\r\n  \"available_positions\": 3,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities",
+                "3"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:21:01 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "43"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"detail\": \"Research opportunity not found\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "validation 400",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"AI\",\r\n  \"description\": \"Too short\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"available_positions\": 0,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "validation 400",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"AI\",\r\n  \"description\": \"Too short\",\r\n  \"research_area\": \"Machine Learning\",\r\n  \"faculty_name\": \"Dr. Ayesha Khan\",\r\n  \"available_positions\": 0,\r\n  \"application_deadline\": \"2026-12-31\",\r\n  \"status\": \"Open\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/opportunities",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "opportunities"
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Sat, 10 Oct 2026 12:22:25 GMT"
+            },
+            {
+              "key": "server",
+              "value": "uvicorn"
+            },
+            {
+              "key": "content-length",
+              "value": "382"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "vary",
+              "value": "Origin"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"detail\": \"Validation failed\",\n  \"errors\": [\n    {\n      \"field\": \"title\",\n      \"message\": \"String should have at least 5 characters\"\n    },\n    {\n      \"field\": \"description\",\n      \"message\": \"String should have at least 10 characters\"\n    },\n    {\n      \"field\": \"department\",\n      \"message\": \"Field required\"\n    },\n    {\n      \"field\": \"required_skills\",\n      \"message\": \"Field required\"\n    },\n    {\n      \"field\": \"available_positions\",\n      \"message\": \"Input should be greater than or equal to 1\"\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ]
+}
